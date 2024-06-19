@@ -204,6 +204,18 @@
          "value": ""
        }
      ]
+  },
+  {
+    "id": "color",
+    "fields": [
+       {
+         "component": "text-input",
+         "valueType": "string",
+         "name": "color",
+         "label": "Color",
+         "value": ""
+       }
+     ]
   }
   
 ]
