@@ -2940,7 +2940,7 @@ const customConfig = {
 //=======================
 async function init$8(block, consumerConfig) {
   console.log(block);
-  const nonMiloUrl = "https://main--milo--adobecom.hlx.page/drafts/snehal/fragments/my-gnav";
+  const nonMiloUrl = "https://main--milo--adobecom.hlx.page/gnav";
   try {
     console.log(consumerConfig);
     console.log(customConfig);
