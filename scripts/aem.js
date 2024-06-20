@@ -757,6 +757,9 @@ async function waitForLCP(lcpBlocks) {
   });
 }
 
+const x = `<meta name="footer-source" content="https://www.adobe.com/cc-shared/footer">`
+document.querySelector('head').append(x);
+
 init();
 
 export {
