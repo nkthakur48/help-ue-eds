@@ -758,7 +758,9 @@ async function waitForLCP(lcpBlocks) {
 }
 
 const x = `<meta name="footer-source" content="https://www.adobe.com/cc-shared/footer">`
+const y = `<meta name="gnav-source" content="https://www.adobe.com/cc-shared/gnav">`
 document.querySelector('head').append(x);
+document.querySelector('head').append(y);
 
 init();
 
