@@ -1185,7 +1185,7 @@ a.static:hover {
   }
 
   header:not(.global-navigation) nav {
-    display: unset;
+    display: flex;
   }
 
   header:not(.global-navigation).has-breadcrumbs + main {
