@@ -2296,7 +2296,6 @@ const locales = {
 function init$7(block) {
   try {
     console.log(block);
-    debugger;
     setConfig$1(config$1);
     block.classList.add('global-footer');
     const footer = new Footer({ block });

@@ -2940,7 +2940,6 @@ const customConfig = {
 //=======================
 async function init$8(block, consumerConfig) {
   console.log(block);
-  debugger
   const nonMiloUrl = "https://main--milo--adobecom.hlx.page/drafts/snehal/fragments/my-gnav";
   try {
     console.log(consumerConfig);
@@ -25397,6 +25396,6 @@ const MY_CONFIG = {
   }
 };
 
-init$8(document.querySelector('header'), MY_CONFIG);
+//init$8(document.querySelector('header'), MY_CONFIG);
 
 export { CONFIG$1 as CONFIG, LANGMAP, init$8 as default, getUniversalNavLocale, osMap };
