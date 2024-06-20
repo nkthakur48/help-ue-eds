@@ -1658,8 +1658,8 @@ async function loadDecorateMenu() {
   });
 
   const [{ decorateMenu, decorateLinkGroup }] = await Promise.all([
-    loadBlock$1('./menu/menu.js'),
-    loadStyles('utilities/menu/menu.css'),
+    loadBlock$1('https://main--milo--adobecom.hlx.page/libs/blocks/global-navigation/utilities/menu/menu.js'),
+    loadStyles('https://main--milo--adobecom.hlx.page/libs/blocks/global-navigation/utilities/menu/menu.css'),
   ]);
 
   resolve({
