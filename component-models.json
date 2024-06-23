@@ -259,13 +259,5 @@
         "value": ""
       }
     ]
-  },
-  {
-    "id": "procedure",
-    "fields": []
-  },
-  {
-    "id": "step",
-    "fields": []
   }
 ]
