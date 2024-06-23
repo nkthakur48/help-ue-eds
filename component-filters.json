@@ -38,5 +38,24 @@
     "components": [
       "card"
     ]
+  },
+  {
+    "id": "procedure",
+    "components": [
+      "step"
+    ]
+  },
+  {
+    "id": "step",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title",
+      "hero",
+      "cards",
+      "columns",
+      "note"
+    ]
   }
 ]
