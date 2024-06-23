@@ -216,6 +216,36 @@
          "value": ""
        }
      ]
+  },
+  {
+    "id": "internalbanner",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "message",
+        "label": "Message",
+        "value": "INTERNAL"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "icon",
+        "label": "Icon",
+        "multi": false
+      }
+    ]
+  },
+  {
+    "id": "articleheader",
+    "fields": [
+      {
+        "component": "text-input",
+        "valueType": "string",
+        "name": "default",
+        "label": "Default",
+        "value": ""
+      }
+    ]
   }
-  
 ]
