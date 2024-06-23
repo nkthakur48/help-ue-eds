@@ -247,5 +247,17 @@
         "value": ""
       }
     ]
+  },
+  {
+    "id": "note",
+    "fields": [
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "message",
+        "label": "Message",
+        "value": ""
+      }
+    ]
   }
 ]
