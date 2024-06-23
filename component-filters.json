@@ -43,12 +43,6 @@
   {
     "id": "procedure",
     "components": [
-      "step"
-    ]
-  },
-  {
-    "id": "step",
-    "components": [
       "text",
       "image",
       "button",
