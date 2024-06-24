@@ -2312,8 +2312,8 @@ function init$7(block) {
     console.log(block);
     setConfig$1(config$1);
     block.classList.add('global-footer');
-    replaceFooterDotMedia();
     const footer = new Footer({ block });
+    replaceFooterDotMedia();
     return footer;
   } catch (e) {
     lanaLog({ message: 'Could not create footer', e });
