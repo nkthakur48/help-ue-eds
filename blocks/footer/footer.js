@@ -2291,6 +2291,20 @@ const locales = {
 
 };
 
+function replaceFooterDotMedia(){
+    var footer = document.querySelectorAll("footer")[0];
+    var imgTags = footer.querySelectorAll("img");
+    var sourceTags = footer.querySelectorAll("source");
+
+    imgTags.forEach((i) => {
+       i.setAttribute("src", i.getAttribute("src").replace("./", "https://main--milo--adobecom.hlx.page/"));
+    });
+
+    sourceTags.forEach((i) => {
+       i.setAttribute("srcset", i.getAttribute("srcset").replace("./", "https://main--milo--adobecom.hlx.page/"));
+    });
+}
+
 //=============================
 
 function init$7(block) {
@@ -2298,6 +2312,7 @@ function init$7(block) {
     console.log(block);
     setConfig$1(config$1);
     block.classList.add('global-footer');
+    replaceFooterDotMedia();
     const footer = new Footer({ block });
     return footer;
   } catch (e) {
