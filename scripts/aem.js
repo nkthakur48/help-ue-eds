@@ -740,7 +740,7 @@ async function loadTemplate() {
   const name = template.toLowerCase().replace(/[^0-9a-z]/gi, '-');
   document.body.classList.add(name);
   const styleLoaded = new Promise((resolve) => {
-    loadStyle(`/templates/${name}/${name}.css`, resolve);
+    loadCSS(`/templates/${name}/${name}.css`);
   });
   const scriptLoaded = new Promise((resolve) => {
     (async () => {
