@@ -267,6 +267,16 @@
         "component": "text",
         "name": "template",
         "label": "Template"
+      },
+      {
+        "component": "aem-tag",
+        "name": "cq:tags",
+        "label": "Tags"
+      },
+      {
+        "component": "aem-tag",
+        "name": "platform",
+        "label": "Platform"
       }
     ]
   }
