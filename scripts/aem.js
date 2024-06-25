@@ -734,6 +734,29 @@ async function loadFooter(footer) {
   return loadBlock(footerBlock);
 }
 
+async function loadTemplate() {
+  const template = getMetadata('template');
+  if (!template) return;
+  const name = template.toLowerCase().replace(/[^0-9a-z]/gi, '-');
+  document.body.classList.add(name);
+  const { miloLibs, codeRoot } = getConfig();
+  const base = miloLibs && MILO_TEMPLATES.includes(name) ? miloLibs : codeRoot;
+  const styleLoaded = new Promise((resolve) => {
+    loadStyle(`${base}/templates/${name}/${name}.css`, resolve);
+  });
+  const scriptLoaded = new Promise((resolve) => {
+    (async () => {
+      try {
+        await import(`${base}/templates/${name}/${name}.js`);
+      } catch (err) {
+        console.log(`failed to load module for ${name}`, err);
+      }
+      resolve();
+    })();
+  });
+  await Promise.all([styleLoaded, scriptLoaded]);
+}
+
 /**
  * Load LCP block and/or wait for LCP in default content.
  * @param {Array} lcpBlocks Array of blocks
@@ -789,4 +812,5 @@ export {
   updateSectionsStatus,
   waitForLCP,
   wrapTextNodes,
+  loadTemplate,
 };
