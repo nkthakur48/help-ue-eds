@@ -3,9 +3,9 @@ init();
 function init(){
     var mainsection = document.querySelector("main .section");
     var tBar = loadTitleBar();
+    mainsection.prepend(tBar);
     var banner = loadInternalBanner();
     tBar.insertAdjacentElement('afterend', banner);
-    mainsection.prepend(tBar);
 }
 
 function loadTitleBar() {
