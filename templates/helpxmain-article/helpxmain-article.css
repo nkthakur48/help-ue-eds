@@ -7,6 +7,7 @@
     justify-content: center;
     color: white;
     box-sizing: border-box;
+    max-width: unset;
 }
 
 .internal-banner {
@@ -18,4 +19,5 @@
     justify-content: center;
     color: white;
     box-sizing: border-box;
+    max-width: unset;
 }
