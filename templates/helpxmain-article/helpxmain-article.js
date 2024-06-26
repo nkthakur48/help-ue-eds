@@ -10,7 +10,7 @@ function init(){
 
 function loadTitleBar() {
     var c_div = document.createElement("div");
-    c_div.classList.add('content');
+    c_div.classList.add('title-bar');
     var ogTitle = document.querySelector('meta[property="og:title"]').getAttribute('content');
     var titleHeader = document.createElement("h1");
     titleHeader.innerHTML = ogTitle;
