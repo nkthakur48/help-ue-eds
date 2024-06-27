@@ -7,7 +7,7 @@ function init(){
     var banner = loadInternalBanner();
     tBar.insertAdjacentElement('afterend', banner);
 
-    last_updated = loadLastModifiedBar();
+    var last_updated = loadLastModifiedBar();
     banner.insertAdjacentElement('afterend', last_updated);
 }
 
