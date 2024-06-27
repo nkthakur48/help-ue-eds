@@ -6,6 +6,33 @@ function init(){
     mainsection.prepend(tBar);
     var banner = loadInternalBanner();
     tBar.insertAdjacentElement('afterend', banner);
+
+    last_updated = loadLastModifiedBar();
+    banner.insertAdjacentElement('afterend', last_updated);
+}
+
+function loadLastModifiedBar() {
+    var lastUpdated = document.querySelector('meta[name="modified-time"]').getAttribute('content');
+    var date = new Date(lastUpdated);
+
+    // Define an array of month names
+    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    // Extract the desired components from the Date object
+    var month = monthNames[date.getUTCMonth()];
+    var day = date.getUTCDate();
+    var year = date.getUTCFullYear();
+
+    // Format the date as "Mon DD, YYYY"
+    var formattedDate = `${month} ${day}, ${year}`;
+    console.log(formattedDate);
+
+    var modifiedString = `Last updated on ${formattedDate}`;
+
+    var lu_div = document.createElement("div");
+    lu_div.classList.add("last-updated");
+    lu_div.innerHTML = modifiedString;
+    return lu_div;
 }
 
 function loadTitleBar() {
