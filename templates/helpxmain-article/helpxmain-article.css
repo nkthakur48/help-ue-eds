@@ -21,3 +21,8 @@
     box-sizing: border-box;
     max-width: unset;
 }
+
+.last-updated {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
