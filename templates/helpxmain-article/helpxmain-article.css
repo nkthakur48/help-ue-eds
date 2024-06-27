@@ -25,8 +25,12 @@
 .last-updated {
     padding-top: 32px;
     padding-bottom: 32px;
+    color: #707070;
 }
 
 .section .default-content-wrapper h2 {
     border-top: 2px solid #ececec;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1em;
 }
