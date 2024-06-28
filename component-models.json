@@ -218,6 +218,18 @@
      ]
   },
   {
+    "id": "steptitle",
+    "fields": [
+      {
+        "component": "text-area",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "note",
     "fields": [
       {

@@ -29,26 +29,13 @@
       "cards",
       "columns",
       "note",
-      "procedure"
+      "steptitle"
     ]
   },
   {
     "id": "cards",
     "components": [
       "card"
-    ]
-  },
-  {
-    "id": "procedure",
-    "components": [
-      "text",
-      "image",
-      "button",
-      "title",
-      "hero",
-      "cards",
-      "columns",
-      "note"
     ]
   }
 ]
