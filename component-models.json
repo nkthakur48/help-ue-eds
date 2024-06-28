@@ -190,7 +190,7 @@
     "id": "steptitle",
     "fields": [
       {
-        "component": "text-input",
+        "component": "richtext",
         "valueType": "string",
         "name": "message",
         "label": "Message",
