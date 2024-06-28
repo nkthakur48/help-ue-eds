@@ -37,6 +37,6 @@
     line-height: 1em;
 }
 
-.procedure p {
+.procedure .default-content-wrapper {
     margin-left: 46px;
 }
