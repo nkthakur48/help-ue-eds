@@ -8,6 +8,8 @@
     color: white;
     box-sizing: border-box;
     max-width: unset;
+    justify-content: left;
+    padding-left: 154px;
 }
 
 .section .internal-banner {
