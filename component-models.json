@@ -187,44 +187,13 @@
     ]
   },
   {
-    "id": "quote",
-    "fields": [
-       {
-         "component": "text-area",
-         "name": "quote",
-         "value": "",
-         "label": "Quote",
-         "valueType": "string"
-       },
-       {
-         "component": "text-input",
-         "valueType": "string",
-         "name": "author",
-         "label": "Author",
-         "value": ""
-       }
-     ]
-  },
-  {
-    "id": "color",
-    "fields": [
-       {
-         "component": "text-input",
-         "valueType": "string",
-         "name": "color",
-         "label": "Color",
-         "value": ""
-       }
-     ]
-  },
-  {
     "id": "steptitle",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text-input",
         "valueType": "string",
-        "name": "title",
-        "label": "Title",
+        "name": "message",
+        "label": "Message",
         "value": ""
       }
     ]
