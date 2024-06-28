@@ -221,7 +221,7 @@
     "id": "steptitle",
     "fields": [
       {
-        "component": "text-area",
+        "component": "richtext",
         "valueType": "string",
         "name": "title",
         "label": "Title",
