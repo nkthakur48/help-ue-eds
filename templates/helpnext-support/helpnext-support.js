@@ -1,6 +1,6 @@
 const backgroundContainer = document.createElement('div');
 backgroundContainer.className = 'background-container';
-backgroundContainer.style.backgroundImage = 'url("./media_10f583de499b1b29ee1a9138d1712bfb8ad91d229.png?width=750&format=webply&optimize=medium")';
+backgroundContainer.style.backgroundImage = 'url("./media_10f583de499b1b29ee1a9138d1712bfb8ad91d229.png")';
 
 // Create the main title
 const mainTitle = document.createElement('h1');
@@ -31,4 +31,5 @@ backgroundContainer.appendChild(mainTitle);
 backgroundContainer.appendChild(searchBox);
 
 // Append the main container to the body
-document.body.appendChild(backgroundContainer);
+var ele = document.querySelector("main .section");
+ele.prepend(backgroundContainer);
