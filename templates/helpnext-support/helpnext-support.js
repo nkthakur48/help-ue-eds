@@ -2,6 +2,9 @@ var backgroundContainer = document.createElement('div');
 backgroundContainer.className = 'background-container';
 backgroundContainer.style.backgroundImage = 'url("./media_10f583de499b1b29ee1a9138d1712bfb8ad91d229.png")';
 
+var helpmsg = document.createElement('p');
+helpmsg.classList.add('help-msg');
+
 // Create the main title
 var mainTitle = document.createElement('h2');
 mainTitle.className = 'main-title';
@@ -24,6 +27,7 @@ searchInput.placeholder = 'Search Help & Support';
 searchBox.appendChild(searchInput);
 
 // Append the title and search box to the main container
+backgroundContainer.appendChild(helpmsg);
 backgroundContainer.appendChild(mainTitle);
 backgroundContainer.appendChild(searchBox);
 
