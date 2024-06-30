@@ -1,30 +1,27 @@
-const backgroundContainer = document.createElement('div');
+var backgroundContainer = document.createElement('div');
 backgroundContainer.className = 'background-container';
 backgroundContainer.style.backgroundImage = 'url("./media_10f583de499b1b29ee1a9138d1712bfb8ad91d229.png")';
 
 // Create the main title
-const mainTitle = document.createElement('h1');
+var mainTitle = document.createElement('h2');
 mainTitle.className = 'main-title';
-mainTitle.textContent = 'Your Main Title';
+
+var bold = document.createElement('b');
+bold.textContent = "Hi, how can we help?";
+mainTitle.appendChild(bold);
 
 // Create the search box container
-const searchBox = document.createElement('div');
+var searchBox = document.createElement('div');
 searchBox.className = 'search-box';
 
 // Create the search input
 const searchInput = document.createElement('input');
 searchInput.type = 'text';
 searchInput.className = 'search-input';
-searchInput.placeholder = 'Search...';
-
-// Create the search button
-const searchButton = document.createElement('button');
-searchButton.className = 'search-button';
-searchButton.textContent = 'Search';
+searchInput.placeholder = 'Search Help & Support';
 
 // Append the search input and button to the search box container
 searchBox.appendChild(searchInput);
-searchBox.appendChild(searchButton);
 
 // Append the title and search box to the main container
 backgroundContainer.appendChild(mainTitle);
