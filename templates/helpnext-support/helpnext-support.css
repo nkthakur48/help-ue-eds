@@ -6,7 +6,6 @@ body, html {
 .section .background-container {
     position: relative;
     height: 100%;
-    background-image: url('your-image-url.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -34,16 +33,6 @@ body, html {
     border: none;
     border-radius: 30px;
     width: 600px;
-}
-.search-button {
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
-    margin-left: 10px;
 }
 
 .help-msg {
