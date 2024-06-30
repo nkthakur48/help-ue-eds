@@ -45,3 +45,9 @@ body, html {
     cursor: pointer;
     margin-left: 10px;
 }
+
+.help-msg {
+    color: black;
+    font-weight: 700;
+    text-align: center;
+}
