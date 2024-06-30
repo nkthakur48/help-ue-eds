@@ -4,6 +4,7 @@ backgroundContainer.style.backgroundImage = 'url("./media_10f583de499b1b29ee1a91
 
 var helpmsg = document.createElement('p');
 helpmsg.classList.add('help-msg');
+helpmsg.textContent = 'Adobe Help & Center';
 
 // Create the main title
 var mainTitle = document.createElement('h2');
