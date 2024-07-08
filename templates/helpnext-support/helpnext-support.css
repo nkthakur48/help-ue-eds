@@ -48,3 +48,21 @@ body, html {
     line-height: 1.25;
     color: #2c2c2c;
 }
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+.card-icon {
+    font-size: 50px;
+    color: #333;
+}
+.card-text {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}

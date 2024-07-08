@@ -252,9 +252,14 @@
     "id": "page-metadata",
     "fields": [
       {
-        "component": "text",
+        "component": "select",
+        "label": "Template",
         "name": "template",
-        "label": "Template"
+        "valueType": "string",
+        "options": [
+          { "name": "Helpx Article", "value": "helpxmain-article" },
+          { "name": "Help Next Support", "value": "helpnext-support" }
+        ]
       },
       {
         "component": "aem-tag",
