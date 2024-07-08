@@ -265,13 +265,10 @@
       },
       {
         "component": "text",
-        "label": "",
-        "name": "video-service",
+        "label": "Embed ID",
+        "name": "id",
         "valueType": "string",
-        "options": [
-          { "name": "Youtube", "value": "youtube" },
-          { "name": "Vimeo", "value": "vimeo" }
-        ]
+        "value": ""
       }
     ]
   },
