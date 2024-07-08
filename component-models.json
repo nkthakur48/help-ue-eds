@@ -251,6 +251,31 @@
     ]
   },
   {
+    "id": "video",
+    "fields": [
+      {
+        "component": "select",
+        "label": "Video Service",
+        "name": "video-service",
+        "valueType": "string",
+        "options": [
+          { "name": "Youtube", "value": "youtube" },
+          { "name": "Vimeo", "value": "vimeo" }
+        ]
+      },
+      {
+        "component": "text",
+        "label": "",
+        "name": "video-service",
+        "valueType": "string",
+        "options": [
+          { "name": "Youtube", "value": "youtube" },
+          { "name": "Vimeo", "value": "vimeo" }
+        ]
+      }
+    ]
+  },
+  {
     "id": "page-metadata",
     "fields": [
       {
