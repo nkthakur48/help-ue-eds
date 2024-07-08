@@ -1,0 +1,14 @@
+.video-wrapper {
+  width: 560px;
+  height: 315px;
+}
+.video-wrapper[data-block-status='loading'] {
+  display: none;
+}
+.video-wrapper[data-block-status='loaded'] {
+  display: block;
+}
+.video-wrapper > iframe {
+  width: 100%;
+  height: 100%;
+}
