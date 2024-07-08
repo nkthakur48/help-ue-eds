@@ -1,5 +1,4 @@
 .video-wrapper {
-  width: 560px;
   height: 315px;
 }
 .video-wrapper[data-block-status='loading'] {
