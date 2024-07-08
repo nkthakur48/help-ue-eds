@@ -202,7 +202,7 @@
     "id": "note",
     "fields": [
       {
-        "component": "richtext",
+        "component": "text",
         "valueType": "string",
         "name": "message",
         "label": "Message",
