@@ -1,11 +1,13 @@
 export default function decorate(block) {
-  // Extract provider and embedID
-  const provider = block.querySelector(':scope > div').innerText.trim()
-  const embedId = block
-    .querySelector(':scope > div:last-child')
-    .innerText.trim()
-  const embedFrameElem = _createFrame(provider, embedId)
-  block.replaceWith(embedFrameElem)
+   if(!isAuthor()){
+      // Extract provider and embedID
+      const provider = block.querySelector(':scope > div').innerText.trim()
+      const embedId = block
+        .querySelector(':scope > div:last-child')
+        .innerText.trim()
+      const embedFrameElem = _createFrame(provider, embedId)
+      block.replaceWith(embedFrameElem)
+   }
 }
 
 function _createFrame(provider, embedId) {
@@ -21,4 +23,13 @@ function _createFrame(provider, embedId) {
     // Leaving blank for now
   }
   return embedFrameElem
+}
+
+function isAuthor() {
+    var ele = document.querySelector("#editor-app");
+    if(ele) {
+        return true;
+    } else {
+        return false;
+    }
 }
