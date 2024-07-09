@@ -26,8 +26,8 @@ function _createFrame(provider, embedId) {
 }
 
 function isAuthor() {
-    var ele = document.querySelector("#editor-app");
-    if(ele) {
+    var ele = window.location.href.indexOf("author");
+    if(ele > -1) {
         return true;
     } else {
         return false;
