@@ -306,6 +306,12 @@
         "component": "aem-tag",
         "name": "platform",
         "label": "Platform"
+      },
+      {
+        "component": "boolean",
+        "label": "Ready for localization?",
+        "name": "readyForLoc",
+        "valueType": "boolean"
       }
     ]
   }
