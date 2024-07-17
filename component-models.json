@@ -273,18 +273,6 @@
     ]
   },
   {
-    "id": "quote",
-    "fields": [
-      {
-        "component": "text",
-        "label": "Message",
-        "name": "message",
-        "valueType": "string",
-        "value": ""
-      }
-    ]
-  },
-  {
     "id": "page-metadata",
     "fields": [
       {
